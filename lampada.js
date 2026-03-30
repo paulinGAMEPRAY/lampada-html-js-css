@@ -9,7 +9,7 @@ function lampReset () {
 }
 
 function isLampBroken () {
-    return lamp.src.indexOf ("quebrada" ) > -1
+    return lamp.src.charAt(26) == "q"
 }
 
 function lampOn () {
@@ -21,7 +21,7 @@ function lampOn () {
 function lampOff () {
     if(!isLampBroken () ) {
     lamp.src = './img/desligada.jpg';
-    }
+    }else{console.log("funfo")}
 }
 
 function lampBroken () {
